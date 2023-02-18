@@ -48,7 +48,7 @@ namespace Web.Controllers
             {
                people.Id = await PeopleRepository.InsertAsync(people);
                return RedirectToAction(nameof(Edit), new { people.Id });
-            } 
+            }
             return View(people);
          }
          catch
