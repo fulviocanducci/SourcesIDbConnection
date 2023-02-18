@@ -10,8 +10,7 @@ namespace Data.Extensions
       {
          FluentMapper.Initialize(config =>
          {
-            config.AddMap(new PeopleMapping());
-            
+            config.AddMap(new PeopleMapping());            
             config.ForDommel();
          });
          return service;
